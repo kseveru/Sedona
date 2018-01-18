@@ -149,6 +149,98 @@ img {
 /* FOOTER
 ====================================================================== */
 
+.page-footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 35px;
+	padding-bottom: 35px;
+}
+
+.tags {
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+}
+
+/* Social
+======================================================= */
+
+.social {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.social__item {
+	width: 46px;
+	height: 48px;
+}
+
+.social__item:not(:first-child) {
+	margin-left: 6px;
+}
+
+.social__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+
+	background-color: #81b3d2;
+}
+
+.social__link:hover,
+.social__link:focus {
+	background-color: #669ec0;
+}
+
+.social__link:active {
+	background-color: #5496bd;
+}
+
+.social__img path {
+	fill: #ffffff;
+}
+
+.social__link:active .social__img path {
+	opacity: 0.3;
+}
+
+/* Develop
+======================================================= */
+
+.develop {
+	line-height: 26px;
+	color: #000000;
+}
+
+.develop__logo {
+	display: inline-block;
+
+	vertical-align: middle;
+}
+
+.develop__img {
+	display: block;
+	margin-left: 10px;
+}
+
+.develop__img path {
+	fill: #231f20;
+}
+
+.develop__img:hover path,
+.develop__img:focus path  {
+	fill: #81b3d2;
+}
+
+.develop__img:active path {
+	fill: #bdbbbc;
+}
 
 
 /* CONTENT INDEX
@@ -385,6 +477,7 @@ img {
 
 .search__form {
 	position: absolute;
+	z-index: 100;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -392,6 +485,7 @@ img {
 	padding: 55px;
 
 	background-color: #ffffff;
+	box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .search__field {
@@ -468,6 +562,17 @@ img {
 	cursor: pointer;
 }
 
+.search__submit:hover,
+.search__submit:focus {
+	background-color: #669ec0;
+}
+
+.search__submit:active {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #5496bd;
+}
+
 /* Map
 ======================================================= */
 
@@ -475,16 +580,22 @@ img {
 	position: relative;
 
 	height: 473px;
+	overflow: hidden;
 }
 
 .map__img {
+	position: relative;
+	left: 50%;
 	z-index: 0;
+
+	display: block;
+	max-width: none;
+	margin-left: -600px;
 }
 
 .map__iframe {
 	position: absolute;
 	top: 0;
-	left: center;
 	z-index: 10;
 
 	width: 100%;
