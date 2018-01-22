@@ -475,6 +475,9 @@ img {
 	background-color: #503e33;
 }
 
+/* search-form
+======================================== */
+
 .search__form {
 	position: absolute;
 	z-index: 100;
@@ -510,7 +513,6 @@ img {
 	line-height: 26px;
 	color: #000000;
 	text-align: left;
-	vertical-align: baseline;
 }
 
 .search__field--short:last-of-type .search__label {
@@ -519,73 +521,34 @@ img {
 
 .search__input {
 	flex-grow: 1;
-	padding: 6px 10px 6px 12px;
+	padding: 6px 12px;
 
 	font-weight: 700;
 	line-height: 26px;
 	color: #000000;
 
 	background-color: #f2f2f2;
+}
+
+.search__input:hover {
+	background-color: #ebebeb;
+}
+
+.search__input:focus {
+	background-color: #ffffff;
+	box-shadow: inset 0 0 0 2px #e5e5e5;
 }
 
 .search__cal {
 	align-self: stretch;
 	display: flex;
 	align-items: center;
-	padding: 8px 10px;
+	padding: 0 12px;
 
 	background-color: #f2f2f2;
 
 	cursor: pointer;
 }
-
-.search__input:hover,
-.search__input:hover ~ .search__cal {
-	background-color: #ebebeb;
-}
-
-.search__input:focus {
-	background-color: #ffffff;
-	box-shadow: inset 2px 0 0 2px #e5e5e5;
-}
-
-.search__input:focus ~ .search__cal {
-	background-color: #ffffff;
-	box-shadow: inset -2px 0 0 2px #e5e5e5;
-}
-/*
-.search__input-wrap {
-	flex-grow: 1;
-	display: flex;
-	align-items: center;
-	padding: 10px 10px 10px 12px;
-
-	background-color: #f2f2f2;
-}
-
-.search__input {
-	flex-grow: 1;
-	font-weight: 700;
-	line-height: 26px;
-	color: #000000;
-}
-
-.search__cal {
-	display: flex;
-	align-items: center;
-
-	cursor: pointer;
-}
-
-.search__input-wrap:hover {
-	background-color: #ebebeb;
-}
-
-.search__input-wrap:focus {
-	background-color: #ffffff;
-	box-shadow: inset 0 0 0 2px #e5e5e5;
-}
-*/
 
 .search__cal-img path {
 	fill: #cacaca;
@@ -600,8 +563,43 @@ img {
 	fill: #81b3d2;
 }
 
-.search__input--number {
+.search__input-wrap {
+	display: flex;
+	justify-content: space-between;
 	width: 114px;
+}
+
+.search__input-edit {
+	width: 37px;
+	padding: 6px 10px;
+
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 24px;
+	color: #a9a9a9;
+
+	background-color: #f2f2f2;
+
+	cursor: pointer;
+}
+
+.search__input-edit:hover,
+.search__input-edit:focus {
+	color: #000000;
+}
+
+.search__input-edit:active {
+	color: #81b3d2;
+}
+
+.search__input--number {
+	width: 40px;
+
+	text-align: center;
+
+	-webkit-appearance: textfield;
+	-moz-appearance: textfield;
+	appearance: textfield;
 }
 
 .search__submit {
