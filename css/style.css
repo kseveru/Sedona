@@ -519,7 +519,7 @@ img {
 
 .search__input {
 	flex-grow: 1;
-	padding: 10px 10px 10px 12px;
+	padding: 6px 10px 6px 12px;
 
 	font-weight: 700;
 	line-height: 26px;
@@ -532,14 +532,72 @@ img {
 	align-self: stretch;
 	display: flex;
 	align-items: center;
-	padding: 0 10px;
+	padding: 8px 10px;
+
+	background-color: #f2f2f2;
+
+	cursor: pointer;
+}
+
+.search__input:hover,
+.search__input:hover ~ .search__cal {
+	background-color: #ebebeb;
+}
+
+.search__input:focus {
+	background-color: #ffffff;
+	box-shadow: inset 2px 0 0 2px #e5e5e5;
+}
+
+.search__input:focus ~ .search__cal {
+	background-color: #ffffff;
+	box-shadow: inset -2px 0 0 2px #e5e5e5;
+}
+/*
+.search__input-wrap {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	padding: 10px 10px 10px 12px;
 
 	background-color: #f2f2f2;
 }
 
-.search__cal:hover,
-.search__cal:focus {
+.search__input {
+	flex-grow: 1;
+	font-weight: 700;
+	line-height: 26px;
+	color: #000000;
+}
+
+.search__cal {
+	display: flex;
+	align-items: center;
+
 	cursor: pointer;
+}
+
+.search__input-wrap:hover {
+	background-color: #ebebeb;
+}
+
+.search__input-wrap:focus {
+	background-color: #ffffff;
+	box-shadow: inset 0 0 0 2px #e5e5e5;
+}
+*/
+
+.search__cal-img path {
+	fill: #cacaca;
+}
+
+.search__cal:hover .search__cal-img path,
+.search__cal:focus .search__cal-img path {
+	fill: #000000;
+}
+
+.search__cal:active .search__cal-img path {
+	fill: #81b3d2;
 }
 
 .search__input--number {
