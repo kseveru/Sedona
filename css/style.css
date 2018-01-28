@@ -78,11 +78,13 @@ img {
 	border: 0;
 }
 
+
 /* HEADER
 ====================================================================== */
 
 .page-header {
 	position: relative;
+	z-index: 100;
 }
 
 .page-header__logo {
@@ -158,6 +160,8 @@ img {
 }
 
 .tags {
+	margin: 0;
+
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 26px;
@@ -165,7 +169,7 @@ img {
 }
 
 /* Social
-======================================================= */
+================================================== */
 
 .social {
 	display: flex;
@@ -211,9 +215,11 @@ img {
 }
 
 /* Develop
-======================================================= */
+================================================== */
 
 .develop {
+	margin: 0;
+
 	line-height: 26px;
 	color: #000000;
 }
@@ -247,7 +253,7 @@ img {
 ====================================================================== */
 
 .main-header {
-	height: 509px;
+	height: 510px;
 	background-color: #7c8991;
 	background-image: url("../img/head-shape.png"),
 										url("../img/head-text-1.png"),
@@ -257,11 +263,11 @@ img {
 										url("../img/head-back.jpg");
 	background-position: 50% 100%, 50% 76px, 50% 132px, 50% 214px, 50% 348px, 50% 0;
 	background-repeat: no-repeat;
-	background-size: 100% 57px, auto, auto, auto, auto, 100% 100%;
+	background-size: 100% auto, auto, auto, auto, auto, 100% 100%;
 }
 
 /* Feauters
-======================================================= */
+================================================== */
 
 .features__text {
 	width: 570px;
@@ -297,7 +303,7 @@ img {
 	flex-direction: column;
 	width: 33%;
 	height: 256px;
-	padding: 40px 35px;
+	padding: 45px 35px 35px;
 
 	text-align: center;
 }
@@ -326,8 +332,8 @@ img {
 
 .features__item-title {
 	order: -1;
-	max-width: 160px;
 	margin: 0 auto;
+	padding: 0 70px;
 
 	font-weight: 700;
 	font-size: 21px;
@@ -338,7 +344,7 @@ img {
 	position: relative;
 
 	display: inline-block;
-	margin: 25px auto;
+	margin: 27px auto 20px;
 	padding: 0 16px;
 }
 
@@ -392,7 +398,7 @@ img {
 
 .features__subitem {
 	width: 33%;
-	padding: 160px 45px 60px;
+	padding: 160px 45px 45px;
 
 	background: url("../img/icon/house.svg") left 50% bottom 200px no-repeat;
 }
@@ -420,7 +426,7 @@ img {
 }
 
 /* Search
-======================================================= */
+================================================== */
 
 .search {
 	width: 568px;
@@ -449,12 +455,12 @@ img {
 }
 
 .search__title {
-	margin: 50px 0 0;
+	margin: 45px 0 0;
 }
 
 .search__link {
 	display: block;
-	padding: 25px;
+	padding: 30px;
 
 	font-weight: 700;
 	font-size: 21px;
@@ -476,7 +482,7 @@ img {
 }
 
 /* search-form
-======================================== */
+=================================== */
 
 .search__form {
 	position: absolute;
@@ -539,6 +545,10 @@ img {
 	box-shadow: inset 0 0 0 2px #e5e5e5;
 }
 
+.search__input::-webkit-inner-spin-button {
+	display: none;
+}
+
 .search__cal {
 	align-self: stretch;
 	display: flex;
@@ -567,9 +577,10 @@ img {
 	display: flex;
 	justify-content: space-between;
 	width: 114px;
+	margin: 0;
 }
 
-.search__input-edit {
+.search__edit-number {
 	width: 37px;
 	padding: 6px 10px;
 
@@ -583,12 +594,12 @@ img {
 	cursor: pointer;
 }
 
-.search__input-edit:hover,
-.search__input-edit:focus {
+.search__edit-number:hover,
+.search__edit-number:focus {
 	color: #000000;
 }
 
-.search__input-edit:active {
+.search__edit-number:active {
 	color: #81b3d2;
 }
 
@@ -602,10 +613,15 @@ img {
 	appearance: textfield;
 }
 
+.search__input--number::-webkit-inner-spin-button,
+.search__input--number::-webkit-outer-spin-button {
+  display: none;
+}
+
 .search__submit {
 	width: 100%;
 	margin-top: 50px;
-	padding: 15px;
+	padding: 17px;
 
 	font-weight: 700;
 	font-size: 21px;
@@ -630,7 +646,7 @@ img {
 }
 
 /* Map
-======================================================= */
+================================================== */
 
 .map {
 	position: relative;
@@ -658,4 +674,124 @@ img {
 	height: 100%;
 
 	border: 0;
+}
+
+
+/* CONTENT HOTELS
+====================================================================== */
+
+/* Filter
+================================================== */
+
+.filter {
+	padding: 30px 6%;
+
+	background: #7c8991 url("../img/head-back-blur.jpg") 50% 50% no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter__form {
+	display: flex;
+
+	color: #ffffff;
+}
+
+.filter__group {
+	width: 20%;
+	margin: 0;
+	padding: 0;
+
+	/*border: none;*/
+}
+
+.filter__group--price {
+	width: 100%;
+}
+
+.filter__group:nth-child(2) {
+	margin-left: 1.25%;
+}
+
+@media (max-width: 1199px) {
+	.filter__group:nth-child(2) {
+		margin-left: auto;
+	}
+}
+
+.filter__group-wrap {
+	width: 40%;
+	margin-left: auto;
+}
+
+.filter__title {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.filter__list {
+	margin: 20px 0 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.filter__item {
+}
+
+.filter__item:not(:first-child) {
+	margin-top: 23px;
+}
+
+.filter__label {
+	position: relative;
+
+	display: inline-block;
+	height: 23px;
+	padding-left: 40px;
+
+	vertical-align: middle;
+}
+
+.filter__label::before {
+	content: "";
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 23px;
+	height: 23px;
+
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.filter__input:checked ~ .filter__label::after {
+	content: "";
+
+	position: absolute;
+	left: 10px;
+	bottom: 7px;
+	width: 11px;
+	height: 20px;
+
+	border-bottom: 4px solid #fff;
+	border-right: 4px solid #fff;
+	box-shadow: inset -1px -1px 0 0 #5080aa,
+											1px 1px 0 0 #5080aa;
+	transform: rotate(45deg);
+}
+
+
+/* Result
+================================================== */
+
+.result {
+}
+
+
+/* POPUP
+====================================================================== */
+
+.popup-close {
+	display: none;
 }
