@@ -322,20 +322,42 @@ img {
 
 .main-header {
   height: 510px;
+  padding-top: 76px;
+
   background-color: #7c8991;
   background-image: url("../img/head-shape.png"),
-                    url("../img/head-text-1.png"),
-                    url("../img/head-text-2.png"),
-                    url("../img/head-text-3.png"),
-                    url("../img/head-text-4.png"),
                     url("../img/head-back.jpg");
-  background-position: 50% 100%, 50% 76px, 50% 132px, 50% 214px, 50% 348px, 50% 0;
+  background-position: 50% 100%, 50% 0;
   background-repeat: no-repeat;
-  background-size: 100% auto, auto, auto, auto, auto, 100% 100%;
+  background-size: 100% auto, 100% 100%;
+}
+
+.main-header__text {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-header__text--2 {
+  margin-top: 11px;
+}
+
+.main-header__text--3 {
+  margin-top: 52px;
+}
+
+.main-header__text--4 {
+  margin-top: 56px;
 }
 
 /* Feauters
 ================================================== */
+
+.features {
+  margin-top: -1px;
+  padding-top: 1px;
+
+  background-color: #ffffff;
+}
 
 .features__text {
   width: 570px;
@@ -761,7 +783,7 @@ img {
 ================================================== */
 
 .filter {
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 30px;
 
   background: #7c8991 url("../img/head-back-blur.jpg") 50% 50% no-repeat;
@@ -799,7 +821,7 @@ img {
 }
 
 .filter__group-wrap {
-  width: 30%;
+  width: 33%;
   margin-left: auto;
 
   text-align: center;
@@ -808,17 +830,18 @@ img {
 .filter__title {
   font-weight: 700;
   font-size: 16px;
+  text-align: left;
 }
 
 .filter__list {
-  margin: 20px 0 0;
+  margin: 25px 0 0;
   padding: 0;
 
   list-style: none;
 }
 
 .filter__item:not(:first-child) {
-  margin-top: 23px;
+  margin-top: 22px;
 }
 
 .filter__label {
@@ -884,6 +907,7 @@ img {
 .filter__price-min,
 .filter__price-max {
   width: 50%;
+  padding-left: 10px;
 }
 
 .filter__price-max {
@@ -904,7 +928,7 @@ img {
   position: relative;
 
   height: 22px;
-  margin-top: 13px;
+  margin-top: 10px;
 
   text-align: left;
 }
@@ -963,17 +987,17 @@ img {
 }
 
 .filter-slider__item--max {
-  margin-left: calc(82% - 34px);
+  margin-left: calc(80% - 34px);
 }
 
 .filter-slider__item--max:hover {
-  margin-left: calc(82% - 35px);
+  margin-left: calc(80% - 35px);
 }
 
 /* ================================ */
 
 .filter__submit {
-  padding: 10px 35px;
+  padding: 7px 35px;
   margin-top: 20px;
 
   border: 2px solid #ffffff;
@@ -1025,7 +1049,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 50px;
+  margin-left: 45px;
+  padding-top: 5px;
 }
 
 .sort__title {
@@ -1188,6 +1213,9 @@ img {
 }
 
 .hotel__title-link {
+  display: block;
+  margin-top: -5px;
+
   color: #000000;
 }
 
@@ -1237,6 +1265,10 @@ img {
   text-align: right;
 }
 
+.hotel__star {
+  margin-left: 2px;
+}
+
 .hotel__rating {
   display: block;
   -ms-grid-column: 7;
@@ -1245,7 +1277,7 @@ img {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
-  padding: 5px 15px;
+  padding: 3px 15px;
 
   color: #666666;
 
@@ -1260,7 +1292,7 @@ img {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
-  padding: 5px 15px;
+  padding: 3px 17px;
 
   font-weight: 700;
 }
