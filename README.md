@@ -18,7 +18,7 @@
     </td>
     <td>
       <a href="https://kseveru.github.io/img/preview-sedona-hotels.png" title="Открыть макет">
-        <img src="https://kseveru.github.io/img/preview-sedona-hotels-small.png">
+        <img src="https:// kseveru.github.io/img/preview-sedona-hotels-small.png">
       </a>
     </td>
   </tr>
