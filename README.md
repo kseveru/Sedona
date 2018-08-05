@@ -13,12 +13,12 @@
   <tr>
     <td>
       <a href="https://kseveru.github.io/img/preview-sedona.png" title="Открыть макет">
-        <img src="https://kseveru.github.io/img/preview-sedona-small.png">
+        <img src="https://kseveru.github.io/img/preview-sedona-small.png" alt="макет главной страницы">
       </a>
     </td>
     <td>
       <a href="https://kseveru.github.io/img/preview-sedona-hotels.png" title="Открыть макет">
-        <img src="https:// kseveru.github.io/img/preview-sedona-hotels-small.png">
+        <img src="https://kseveru.github.io/img/preview-sedona-hotels-small.png" alt="макет внутренней страницы">
       </a>
     </td>
   </tr>
